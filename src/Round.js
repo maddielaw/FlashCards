@@ -19,7 +19,7 @@ class Round {
     currentTurn.evaluateGuess() ? null : this.incorrectGuesses.push(this.currentCard.id);
     this.currentCard = this.deck.cards[++ this.cardCounter];
 
-    return this.deck.cards.length === 0 ? this.endRound() : currentTurn.giveFeedback();
+    return this.currentCard === this.deck.cards[30] ? `${currentTurn.giveFeedback()} ${this.endRound()}` : currentTurn.giveFeedback();
   };
 
   calculatePercentageCorrect() {
