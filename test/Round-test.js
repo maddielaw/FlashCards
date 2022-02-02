@@ -111,7 +111,7 @@ describe('Round', function() {
     expect(round.takeTurn("array", card1)).to.equal('incorrect!')
   });
 
-  it.skip('should calculate the percentage of correct answers', function() {
+  it('should calculate the percentage of correct answers', function() {
     const card1 = new Card(1,"What allows you to define a set of related information using key-value pairs?", ["object", "array", "function"], "object");
     const card2 = new Card(2, "What is a comma-separated list of related values?", ["array", "object", "function"], "array");
     const card3 = new Card(3, "What type of prototype method directly modifies the existing array?", ["mutator method", "accessor method", "iteration method"], "mutator method");
@@ -126,7 +126,7 @@ describe('Round', function() {
     expect(round.calculatePercentageCorrect()).to.equal(20)
   });
 
-  it.skip('should be able to end the round and tell player how many correct guesses they had', function() {
+  it('should be able to end the round and tell player how many correct guesses they had', function() {
     const card1 = new Card(1,"What allows you to define a set of related information using key-value pairs?", ["object", "array", "function"], "object");
     const card2 = new Card(2, "What is a comma-separated list of related values?", ["array", "object", "function"], "array");
     const card3 = new Card(3, "What type of prototype method directly modifies the existing array?", ["mutator method", "accessor method", "iteration method"], "mutator method");
