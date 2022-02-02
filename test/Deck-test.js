@@ -18,7 +18,7 @@ describe('Deck', function() {
     const cards = [card1, card2, card3];
 
     const deck = new Deck(cards);
-    expect(deck.cards).to.equal(cards);
+    expect(deck.cards).to.equal([card1, card2, card3]);
   });
 
   it.skip('should be able to count cards in deck', function() {
@@ -29,6 +29,6 @@ describe('Deck', function() {
     const cards = [card1, card2, card3];
 
     const deck = new Deck(cards);
-    expect(deck.countCards()).to.equal(2)
+    expect(deck.countCards()).to.equal(3)
   });
 });

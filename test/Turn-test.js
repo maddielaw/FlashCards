@@ -8,7 +8,7 @@ describe('Turn', function() {
 
   it.skip('should be a function', function() {
     const turn = new Turn();
-    expect(Turn).to.be.a('function');
+    expect(turn).to.be.a('function');
   });
 
   it.skip('should contain a user guess', function() {
@@ -19,7 +19,7 @@ describe('Turn', function() {
   it.skip('should instantiate a new Card object', function() {
     const card = new Card(2, "What is a comma-separated list of related values?", ["array", "object", "function"], "array");
     const turn = new Turn('array', card);
-    expect(card).to.be.an.instanceOf(Card);
+    expect(turn.card).to.be.an.instanceOf(Card);
   });
 
   it.skip('should be able to return the guess', function() {
