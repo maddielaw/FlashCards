@@ -107,8 +107,8 @@ describe('Round', function() {
     const deck = new Deck(cards);
     const round = new Round(deck);
 
-    expect(round.takeTurn("object")).to.equal('correct!')
-    expect(round.takeTurn("function")).to.equal('incorrect!')
+    expect(round.takeTurn("object")).to.equal('Correct!')
+    expect(round.takeTurn("function")).to.equal('Incorrect!')
   });
 
   it('should calculate the percentage of correct answers', function() {

@@ -16,15 +16,10 @@ class Round {
   takeTurn(guess) {
     let currentTurn = new Turn(guess, this.currentCard);
     this.turns ++;
+    currentTurn.evaluateGuess() ? null : this.incorrectGuesses.push(this.currentCard.id);
+    this.currentCard = this.deck.cards[++ this.cardCounter];
 
-    if (currentTurn.evaluateGuess()) {
-      this.currentCard = this.deck.cards[++ this.cardCounter]
-      return "correct!"
-    } else {
-      this.currentCard = this.deck.cards[++ this.cardCounter]
-      this.incorrectGuesses.push(this.currentCard.id);
-      return "incorrect!"
-    }
+    return this.deck.cards.length === 0 ? this.endRound() : currentTurn.giveFeedback();
   };
 
   calculatePercentageCorrect() {
