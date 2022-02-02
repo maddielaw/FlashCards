@@ -48,8 +48,8 @@ describe('Turn', function() {
     const turn1 = new Turn('array', card);
     const turn2 = new Turn('object', card);
 
-    expect(turn1.giveFeedback()).to.equal("Correct!");
-    expect(turn2.giveFeedback()).to.equal("Incorrect!")
+    expect(turn1.giveFeedback()).to.equal("correct!");
+    expect(turn2.giveFeedback()).to.equal("incorrect!")
   });
 
 })
