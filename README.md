@@ -29,7 +29,7 @@ Testing: Mocha and Chai
 
 ## Future Additions
 - Add multiple data-sets and allow players to select their study deck set before playing
-- Add a timer so that a player can know how long it took them to complete a deck of cards
+- Add a review feature so that players can review and try again the cards they guessed incorrectly.
 
 ## Project Board
 [FlashCards Tello Board](https://trello.com/b/MhnYQdpH/flashcards-project-board)
