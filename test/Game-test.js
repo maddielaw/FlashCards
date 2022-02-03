@@ -1,6 +1,5 @@
 const chai = require('chai');
 const expect = chai.expect;
-
 const Round = require('../src/Round');
 const Deck = require('../src/Deck');
 const Card = require('../src/Card');
@@ -18,7 +17,7 @@ describe('Game', function() {
     deck = new Deck(cards);
     round = new Round(deck);
     game = new Game();
-  })
+  });
 
   it('should be able to create a deck of cards', function() {
     game.start();
@@ -30,5 +29,5 @@ describe('Game', function() {
     expect(game.currentRound).to.equal(null)
     game.start();
     expect(game.currentRound).to.be.instanceOf(Round)
-  })
-})
+  });
+});

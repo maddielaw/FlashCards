@@ -1,6 +1,5 @@
 const chai = require('chai');
 const expect = chai.expect;
-
 const Turn = require('../src/Turn');
 const Card = require('../src/Card'); 
 
@@ -10,7 +9,7 @@ describe('Turn', function() {
     card = new Card(2, "What is a comma-separated list of related values?", ["array", "object", "function"], "array");
     turn1 = new Turn('array', card);
     turn2 = new Turn('object', card);
-  })
+  });
 
   it('should be a function', function() {
     const turn = new Turn();
@@ -43,5 +42,4 @@ describe('Turn', function() {
     expect(turn1.giveFeedback()).to.equal("correct!");
     expect(turn2.giveFeedback()).to.equal("incorrect!")
   });
-
-})
+});

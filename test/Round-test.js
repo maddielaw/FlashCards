@@ -1,6 +1,5 @@
 const chai = require('chai');
 const expect = chai.expect;
-
 const Round = require('../src/Round');
 const Deck = require('../src/Deck');
 const Card = require('../src/Card');
@@ -16,7 +15,7 @@ describe('Round', function() {
     cards = [card1, card2, card3];
     deck = new Deck(cards);
     round = new Round(deck);
-  })
+  });
 
   it('should be a function', function() {
     expect(Round).to.be.a('function');
@@ -76,5 +75,4 @@ describe('Round', function() {
 
     ________________________________________________________`)
   });
-
-})
+});

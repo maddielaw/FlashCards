@@ -45,7 +45,7 @@ class Round {
     ** Round over! ** You answered ${this.calculatePercentageCorrect()}% of the questions correctly in ${this.minutes} minutes ${this.seconds} seconds!
 
     ________________________________________________________`
-  }
+  };
 };
 
 
