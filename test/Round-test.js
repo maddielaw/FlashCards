@@ -66,11 +66,13 @@ describe('Round', function() {
   it('should be able to end the round and tell player how many correct guesses they had', function() {
     round.turns = 25;
     round.incorrectGuesses = [1, 2, 3, 4, 5];
+    round.minutes = 1;
+    round.seconds = 30;
 
     expect(round.endRound()).to.equal(`
     ________________________________________________________
     
-    ** Round over! ** You answered 20% of the questions correctly!
+    ** Round over! ** You answered 20% of the questions correctly in 1 minutes 30 seconds!
 
     ________________________________________________________`)
   });
