@@ -1,5 +1,5 @@
 ## Description
-FlashCards is a terminal-based program meant to simulate working through a set of study flashcards on Javascript prototype methods. Users will be prompted with questions and 3 possible answers to choose from. They will be informed of incorrect or correct answers and given a percentage of correct answers at the end of the card deck.
+FlashCards is a terminal-based program meant to simulate working through a set of study flashcards on Javascript prototype methods. Users will be prompted with questions and 3 possible answers to choose from. They will be informed of incorrect or correct answers and given a percentage of correct answers at the end of the card deck as well as how many minutes and seconds it took them to complete the deck.
 
 ## Technology Used
 JavaScript
@@ -16,7 +16,8 @@ Testing: Mocha and Chai
 ## Features
 - The card deck begins with a welcome message and then prompts the player with the first question
 - After selecting an answer the program lets the player know whether it was correct or incorrect before moving on
-- After the end of the round (30 cards), the player will be told that the round has ended and be supplied with the percentage of questions they got correct.
+- After the end of the round (30 cards), the player will be told that the round has ended and be supplied with the percentage of questions they got correct
+- Players will also be informed of how much time it took them to complete the deck at the end in minutes and seconds
 
 ### Start your study session!
 
@@ -24,7 +25,7 @@ Testing: Mocha and Chai
 ![FlashCards gameplay](https://media0.giphy.com/media/B4t7gKH6oii9Q3iXHT/giphy.gif?cid=790b7611b98f608589802e01d575a0fe32699a839cf1bdc5&rid=giphy.gif&ct=g)
 
 #### Round over
-![Round over message](https://media4.giphy.com/media/eR4zWRtyJtevj9gQ01/giphy.gif?cid=790b7611603b3a554c3cb0d13f36ea1a7d53f97f47d0683d&rid=giphy.gif&ct=g)
+![Round over with timer](https://user-images.githubusercontent.com/92049763/152439015-f6bac900-c34d-46ff-b79e-75ac4c5235de.png)
 
 ## Future Additions
 - Add multiple data-sets and allow players to select their study deck set before playing
