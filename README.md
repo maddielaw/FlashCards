@@ -32,7 +32,10 @@ Begin by selecing which player will be player 1 (the tent) and which will be pla
 
 ## Future Additions
 - Add multiple data-sets and allow players to select their study deck set before playing
-- Add a landing page where players can select their own tokens before playing and can enter in their names
+- Add a timer so that a player can know how long it took them to complete a deck of cards
+
+## Project Board
+[FlashCards Tello Board](https://trello.com/b/MhnYQdpH/flashcards-project-board)
 
 ## Credits
 [Maddie Law's GitHub](https://github.com/maddielaw)
