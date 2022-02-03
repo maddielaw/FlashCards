@@ -7,22 +7,18 @@ JavaScript
 Testing: Mocha and Chai
 
 ## Installation & Setup
-Users will be able to access my site via the deployed project link -- coming soon!
-
-## Features
-- The card deck begins with a welcome message and then prompts the player with the first question
-- After selecting an answer the program lets the player know whether it was correct or incorrect before moving on
-- After the end of the round (30 cards), the player will be told that the round has ended and be supplied with the percentage of questions they got correct.
-
-## To Use
 - First clone down the repository with `$ git clone`
 - Install dependencies with `$ npm install`
 - To begin using the program, run `$ node index.js` in your terminal
 - Use the up/down arrow keys or the number pad to select your answer
 - Press enter to submit your answer and to move onto the next question
 
+## Features
+- The card deck begins with a welcome message and then prompts the player with the first question
+- After selecting an answer the program lets the player know whether it was correct or incorrect before moving on
+- After the end of the round (30 cards), the player will be told that the round has ended and be supplied with the percentage of questions they got correct.
+
 ### Start your study session!
-Begin by selecing which player will be player 1 (the tent) and which will be player 2 (the pine tree) -- player 1 will start the game off by selecting a square to place their token and so on and so forth! After each win or draw, the opposite player begins the next game.
 
 #### Gameplay
 ![FlashCards gameplay](https://media0.giphy.com/media/B4t7gKH6oii9Q3iXHT/giphy.gif?cid=790b7611b98f608589802e01d575a0fe32699a839cf1bdc5&rid=giphy.gif&ct=g)
