@@ -6,6 +6,8 @@ class Round {
     this.turns = 0;
     this.currentCard = deck.cards[this.turns];
     this.incorrectGuesses = [];
+    this.seconds = 0;
+    this.minutes = 0;
   };
 
   returnCurrentCard() {
@@ -21,6 +23,20 @@ class Round {
     return this.currentCard === this.deck.cards[30] ? `${currentTurn.giveFeedback()} ${this.endRound()}` : currentTurn.giveFeedback();
   };
 
+  addToTimer() {
+    if (this.currentCard != this.deck.cards[30]) {
+      setInterval(() => this.formatTimer(), 1000)
+    }
+  };
+
+  formatTimer() {
+    this.seconds ++;
+    if (this.seconds === 60) {
+      this.minutes ++
+      this.seconds = 0;
+    }
+  }
+
   calculatePercentageCorrect() {
     return (this.incorrectGuesses.length / this.turns) * 100
   };
@@ -29,7 +45,7 @@ class Round {
     return `
     ________________________________________________________
     
-    ** Round over! ** You answered ${this.calculatePercentageCorrect()}% of the questions correctly!
+    ** Round over! ** You answered ${this.calculatePercentageCorrect()}% of the questions correctly in ${this.minutes} minutes ${this.seconds} seconds!
 
     ________________________________________________________`
   }
