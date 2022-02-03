@@ -1,71 +1,40 @@
-# FlashCards Starter Kit
+## Description
+FlashCards is a terminal-based program meant to simulate working through a set of study flashcards on Javascript prototype methods. Users will be prompted with questions and 3 possible answers to choose from. They will be informed of incorrect or correct answers and given a percentage of correct answers at the end of the card deck.
 
-## Fork This Repo
+## Technology Used
+JavaScript
 
-On the top right corner of this page, click the **Fork** button.
+Testing: Mocha and Chai
 
-## Setup
+## Installation & Setup
+Users will be able to access my site via the deployed project link -- coming soon!
 
-Clone down the forked repo (from your GitHub). Since you don't want to name your project "flashcards-starter", you can use an optional argument when you run `git clone` (you replace the `[...]` with the terminal command arguments):
+## Features
+- The card deck begins with a welcome message and then prompts the player with the first question
+- After selecting an answer the program lets the player know whether it was correct or incorrect before moving on
+- After the end of the round (30 cards), the player will be told that the round has ended and be supplied with the percentage of questions they got correct.
 
-```bash
-git clone [remote-address] [what you want to name the repo]
-```
+## To Use
+- First clone down the repository with `$ git clone`
+- Install dependencies with `$ npm install`
+- To begin using the program, run `$ node index.js` in your terminal
+- Use the up/down arrow keys or the number pad to select your answer
+- Press enter to submit your answer and to move onto the next question
 
-Once you have cloned the repo, change into the directory and install the library dependencies. Run:
+### Start your study session!
+Begin by selecing which player will be player 1 (the tent) and which will be player 2 (the pine tree) -- player 1 will start the game off by selecting a square to place their token and so on and so forth! After each win or draw, the opposite player begins the next game.
 
-```bash
-npm install
-```
+#### Gameplay
+![FlashCards gameplay](https://media0.giphy.com/media/B4t7gKH6oii9Q3iXHT/giphy.gif?cid=790b7611b98f608589802e01d575a0fe32699a839cf1bdc5&rid=giphy.gif&ct=g)
 
-To verify that it is setup correctly, run `npm test` in your terminal. You should have 5 pending tests in your `Card` test file that show up.
+#### Round over
+![Round over message](https://media4.giphy.com/media/eR4zWRtyJtevj9gQ01/giphy.gif?cid=790b7611603b3a554c3cb0d13f36ea1a7d53f97f47d0683d&rid=giphy.gif&ct=g)
 
-Running `node index.js` from the root of your project should result in the following message being displayed in your terminal: 
+## Future Additions
+- Add multiple data-sets and allow players to select their study deck set before playing
+- Add a landing page where players can select their own tokens before playing and can enter in their names
 
-```bash
-Your project is running...
-```
+## Credits
+[Maddie Law's GitHub](https://github.com/maddielaw)
 
-*Note that you will not need to you run your server until you are instantiating your `Game` class in Iteration 3. Prior to that, you should be using TDD to drive your code. You should check the functionality of your application by running your tests via `npm test`.*
-
-
-## Where to Add Your Code
-
-### JavaScript
-
-**Create all of your feature code files in the `src` directory.**
-
-We will be using the `module.exports` and `require` syntax to share code across files.
-
-## How to View Your Code in Action
-
-Once you are working through Iteration 3, you will want to start your server to test your functionality.
-In the terminal, run:
-
-```bash
-node index.js
-```
-
-When the game is functioning appropriately, you will be prompted for each question, have the opportunity to select an answer, and will be given feedback. You will be able to play through the entire deck of cards:
-
-![flash cards example gif](https://media.giphy.com/media/1zkb1q58eTiTH6D7wc/giphy.gif)
-
----
-
-## Test Files Organization
-
-Similar to feature code, your test code needs to be put in a specific place for it to run successfully.
-
-**Put all of your test files in the `test` directory.** As a convention, all test filenames should end with `-test.js`. For instance: `Round-test.js`.
-
-## Running Your Tests
-
-Run your test suite using the command:
-
-```bash
-npm test
-```
-
-The test results will output to the terminal.
-
-
+[Turing School of Software and Design's GitHub](https://github.com/turingschool-examples)
